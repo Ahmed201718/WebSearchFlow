@@ -12,9 +12,9 @@ public class TestCases extends DriverSetup {
     ResultsPage ResultPageObj;
     HomePage HomePageObj;
     public PropertiesHandler prop = new PropertiesHandler();
-    public static int NmOfResult1;
+     int NmOfResult1;
      int TotalNmOfResults;
-    int NmOfResult2;
+     int NmOfResult2;
 
 
 

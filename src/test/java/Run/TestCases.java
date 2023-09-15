@@ -1,19 +1,10 @@
 package Run;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import Utilites.PropertiesHandler;
 import Pages.ResultsPage;
 import Pages.HomePage;
-import java.sql.Driver;
 
 
 public class TestCases extends DriverSetup {
@@ -62,12 +53,8 @@ public class TestCases extends DriverSetup {
 
     @Test
     public void test5() {
-
         TotalNmOfResults=ResultPageObj.CountOfresults();
         NmOfResult2=TotalNmOfResults-NmOfResult1;
-        System.out.println(TotalNmOfResults);
-        System.out.println(NmOfResult2);
-        System.out.println(NmOfResult1);
         Assert.assertNotEquals(NmOfResult1,NmOfResult2);
     }
 

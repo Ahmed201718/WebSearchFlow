@@ -20,7 +20,7 @@ public class TestCases extends DriverSetup {
 
     @BeforeClass
     public void test() {
-        beforeClass(prop.geturl(), prop.getbrowser1());
+        Driversetup(prop.geturl(), prop.getbrowser1());
         HomePageObj = new HomePage(driver);
         ResultPageObj = new ResultsPage(driver);
     }

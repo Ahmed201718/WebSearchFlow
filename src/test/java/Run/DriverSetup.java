@@ -12,7 +12,7 @@ public class DriverSetup {
     public JavascriptExecutor jsDriver;
 
     @Parameters({"url", "browserType"})
-    public void beforeClass(String url, String browserType) {
+    public void Driversetup(String url, String browserType) {
         switch (browserType) {
             case ("Chrome"):
                 WebDriverManager.chromedriver().setup();
